@@ -1,0 +1,225 @@
+@import "fonts";
+@import "nullstyle";
+
+body{
+}
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    flex-direction: column;
+    align-items: center;
+
+}
+header{
+width: 100%;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+margin: 30px 0 30px 0;
+}
+.content{
+
+}
+.logo {
+    img{
+        width:170px;
+    }
+}
+.novigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.novigation__list {
+    position: relative;
+    right: 17px;
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 2px;
+}
+.novigation__list-item {
+    margin: 0 20px;
+    text-align: center;
+
+    svg{
+        max-height: 8px;
+        max-width: 12px;
+    }
+
+}
+.arrowsolutions {
+}
+.search {
+    margin: 0 34px 0 0;
+}
+.search__loop {
+    position: relative;
+    right: 17px;
+    bottom: 2px;
+    max-width: 24px;
+    max-height: 24px;
+}
+.search__basket {
+    position: relative;
+    bottom: 2px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+@media(max-width: 767px){
+    .novigation__list {
+        position: relative;
+        right: 17px;
+        font-size: 12px;
+        margin: 2px;
+    }    
+    .novigation__list-item {
+        margin: 0 10px;
+        text-align: center;
+    
+        svg{
+            max-height: 8px;
+            max-width: 12px;
+        }
+    
+    }
+
+}
+
+//////////////////////////////////////////////header///////////////////////////////////
+
+
+
+
+
+.about {
+}
+.about__body {
+}
+.about__text {
+}
+.about__btn {
+}
+.about__img {
+}
+.categories {
+}
+.categories__leftcollum {
+}
+.leftcollum__body {
+}
+.leftcollum__upperBlock {
+}
+.leftcollum__upperImgWrapper {
+}
+.laptop__text {
+}
+.laptop__header {
+}
+.leftcollum__lowerBlock {
+}
+.leftcollum__lowerImgWrapper {
+}
+.watch__text {
+}
+.watch__header {
+}
+.categories__rightcollum {
+}
+.rightcollum__body {
+}
+.rightcollum__phones {
+}
+.phones__text {
+}
+.phones__header {
+}
+.rightcollum__tablet {
+}
+.tablet__text {
+}
+.tablet__header {
+}
+.prices {
+}
+.prices__wrapper {
+}
+.prices__header {
+}
+.prices__textheader {
+}
+.prices__text {
+}
+.prices__products {
+}
+.products__macpro {
+}
+.macpro__header {
+}
+.macpro__description {
+}
+.macpro__price {
+}
+.products__watch {
+}
+.watch__description {
+}
+.watch__price {
+}
+.products__macair {
+}
+.macair__header {
+}
+.macair__description {
+}
+.macair__price {
+}
+.products__ipad {
+}
+.ipad__header {
+}
+.ipad__description {
+}
+.ipad__price {
+}
+.advertising {
+}
+.advertising__wrapper {
+}
+.advertising__header {
+}
+.advertising__text {
+}
+.advertising__cards {
+}
+.cards__item {
+}
+.cards__header {
+}
+.cards__text {
+}
+.cards__btn {
+}
+.ideas {
+}
+.ideas__wrapper {
+}
+.ideas__header {
+}
+.ideas__headerHeader {
+}
+.ideas__textheader {
+}
+.ideas__content {
+}
+.ideas__img {
+}
+.ideas__textcontent {
+}
+.ideas__contentlist {
+}
