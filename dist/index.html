@@ -19,7 +19,7 @@
             <path d="M20.9999 20.9999L16.6499 16.6499" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
         </symbol>
-        <symbol id="basketSearch" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="basketSearch" fill="none" width="24" height="24" viewBox="0 0 24 24">
             <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,42 +59,56 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Scelerisque in est dui, aliquam, tempor. Faucibus morbi 
                     turpis.</p>
+                <a href="#" class="about__btn">Explore</a>
             </div>
-            <a href="#" class="about__btn">Explore</a>
+
         </div>    
         <img class="about__img" src="./../img/phones.png" alt="some phones">  
     </section>
     <section class="categories">
-        <div class="categories__leftcollum">
-            <div class="leftcollum__body">
-                <div class="leftcollum__upperBlock">
-                        <div class="leftcollum__upperImgWrapper">
-                            <img src="./../img/laptop.png" alt="laptop">
-                        </div>   
-                        <p class="laptop__text">Laptops</p>
-                        <p class="laptop__header">True Laptop Solution</p>
-                </div>
-                <div class="leftcollum__lowerBlock">
-                    <div class="leftcollum__lowerImgWrapper">
-                        <img src="./../img/applewatch.png" alt="applewatch">
-                    </div>   
-                    <p class="watch__text">Watch</p>
-                    <p class="watch__header">Not just stylisht</p>
-            </div>
-            </div>
-         
+        <div class="categories__header">
+            <p id="categories__header">Shop our latest offers and categories</p>
+            <p id="categories__text">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit.
+                 Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="categories__rightcollum">
-            <div class="rightcollum__body">
-                <div class="rightcollum__phones">
-                    <img src="./../img/phonescontent.png" alt="#">
-                    <p class="phones__text">Phones</p>
-                    <p class="phones__header">Your day to day life</p>
+        <div class="categories__wrapper">
+            <div class="categories__leftcollum">
+                <div class="leftcollum__body">
+                    <div class="leftcollum__upperBlock">
+                            <div class="leftcollum__upperImgWrapper">
+                                <img src="./../img/laptop.png" alt="laptop">
+                            </div>   
+                            <p class="laptop__text">Laptops</p>
+                            <p class="laptop__header">True Laptop Solution</p>
+                    </div>
+                    <div class="leftcollum__lowerBlock">
+                        <div class="leftcollum__lowerImgWrapper">
+                            <img src="./../img/applewatch.png"  alt="applewatch">
+                        </div>   
+                        <div class="leftcollum__textWrapper">
+                            <p class="watch__text">Watch</p>
+                            <p class="watch__header">Not just stylisht</p>
+                        </div>
                 </div>
-                <div class="rightcollum__tablet">
-                    <img src="./../img/handwithphone.png" alt="#">
-                    <p class="tablet__text">Tablet</p>
-                    <p class="tablet__header">Empower your work</p>
+                </div>
+            
+            </div>
+            <div class="categories__rightcollum">
+                <div class="rightcollum__body">
+                    <div class="rightcollum__wrapper"></div>
+                    <div class="rightcollum__phones">
+                        <img src="./../img/phonescontent.png" alt="#">
+                        <p class="phones__text">Phones</p>
+                        <p class="phones__header">Your day to day life</p>
+                    </div>
+                    <div class="rightcollum__tablet">
+                        
+                        <p class="tablet__text">Tablet</p>
+                        <p class="tablet__header">Empower your work</p>
+                        <img src="./../img/handwithphone.png"  alt="#">
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +134,7 @@
                 </div>
                 <div class="products__watch">
                     <img src="./../img/smartgalaxywatch3.png" alt="MacPro 13">
-                    <p class="watch__header">Smart Galaxy Watch 3</p>
+                    <p class="products__watch">Smart Galaxy Watch 3</p>
                     <p class="watch__description">
                         Neque porro quisquam est qui
                         dolorem ipsum quia dolor sit amet, 
@@ -208,10 +222,7 @@
     </section>
    </main>
    <footer>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-         Eligendi molestias repellendus at! Tempora id corporis placeat, quis quae facilis cum consectetur iste veniam quas vitae, fugiat voluptate autem odio suscipit!
-    </p>
+    
 </footer>
 
    <script src="js/app.min.js"></script>
