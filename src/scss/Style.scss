@@ -1,5 +1,7 @@
 @import "fonts";
 @import "nullstyle";
+@import "mixins";
+@import "media";
 
 body{
     overflow-x: hidden;
@@ -51,6 +53,9 @@ margin: 30px 0 30px 0;
 .novigation__list-item {
     margin: 0 20px;
     text-align: center;
+        a{
+           color: black;
+        }
 
     svg{
         max-height: 8px;
@@ -77,25 +82,6 @@ margin: 30px 0 30px 0;
     max-height: 24px;
 }
 
-@media(max-width: 767px){
-    .novigation__list {
-        position: relative;
-        right: 17px;
-        font-size: 12px;
-        margin: 2px;
-    }    
-    .novigation__list-item {
-        margin: 0 10px;
-        text-align: center;
-    
-        svg{
-            max-height: 8px;
-            max-width: 12px;
-        }
-    
-    }
-
-}
 
 //////////////////////////////////////////////header///////////////////////////////////
 
@@ -136,72 +122,6 @@ margin: 30px 0 30px 0;
         line-height: 19.2px;
     }
 }
-/////////////////////////////about adaptive//////////////////////////////////// 
-@media(max-width: 1275px){
-    .about{
-        max-width: 1250px;
-        margin: 0 20px;
-    }
-    .about__img{
-        margin: 0 10px 0 0;
-    }
-    .about__text{
-        h1{
-            font-size: 40px;
-            line-height: 60px;
-        }
-        p{
-            font-size: 14px;
-        }
-    }
-}
-@media(max-width: 1072px){
-    .about{
-        max-width: 950px;
-        margin: 0 0 0 60px;
-    }
-    .about__text{
-        h1{
-            font-size: 35px;
-            line-height: 55px;
-        }
-    }
-}
-@media(max-width: 967px){
-
-    .about{
-        max-width: 800px;
-        position: relative;
-        left: 72px;
-    }
-    .about__text{
-        h1{
-            font-size: 26px;
-            line-height: 40px;
-        }
-        p{
-            font-size: 12px;
-            margin: 0 0 13px 0;
-        }
-    }
-
-    h1{
-        line-height: 70px;
-        width: 100%;
-        font-size: 58px;
-        font-family: ReadexPro;
-        margin: 0 ;
-    }
-    p{
-        font-family: Inter;
-        font-size: 16px;
-        margin: 0 ;
-        line-height: 19.2px;
-    }
-
- 
-}
-////////////////////////////about adaptive////////////////////////////////////////
 .about__btn {
     margin: 14px 0 0 0;
     padding: 15px 0 25px 0;
@@ -227,7 +147,7 @@ margin: 30px 0 30px 0;
 .categories {
     display: flex;
     flex-direction: column;
-    margin: 75px 5px;
+    margin: 75px 10px;
     max-height: 1020px;
 }
 .categories__header {
@@ -254,6 +174,7 @@ margin: 30px 0 30px 0;
     width: 100%;
     height: 100%;
     flex-grow: 1;
+    gap: 0;
 }
 .categories__leftcollum {
     display: flex;
@@ -263,22 +184,24 @@ margin: 30px 0 30px 0;
    
 }
 .leftcollum__body {
-    position: relative;
-    left: 10px;
+
     display: flex;
     flex-direction: column;
     height: 100%;
     width: auto;
     align-items: center;
+  
     
 
 }
 .leftcollum__upperBlock {
     display: block;
-    padding: 0 42px 0 44px;
+    padding: 0 35px 0 47px;
     height: 65%;
     box-shadow: 1px 1px 12px 0px grey;
-    width: 95%;
+    width: 98.2%;
+
+  
 
 }
 .leftcollum__upperImgWrapper {
@@ -306,7 +229,7 @@ margin: 30px 0 30px 0;
     display: flex;
     margin: 72px 0 0 0;
     height: 40%;
-    width: 95%;
+    width: 98%;
     box-shadow: 1px 1px 12px 0px grey;
     padding: 0 40px;
 }
@@ -329,7 +252,7 @@ margin: 30px 0 30px 0;
     font-family: ReadexPro;
     font-size: 32px;
     line-height: 40px;
-    padding: 0 0 0 31%;
+    padding: 0 0 0 25%;
     text-align: center;
 }
 
@@ -340,12 +263,11 @@ margin: 30px 0 30px 0;
     display: flex;
     flex: 0 1 50%;
 
-
 }
 .rightcollum__body {
     display: flex;
     height: 97.5%;
-    gap: 10px;
+    gap: 13px;
 
 }
 .rightcollum__phones {
@@ -354,20 +276,25 @@ margin: 30px 0 30px 0;
     justify-content: center;
     flex: 0 1 50%;
     box-shadow: 1px 1px 12px 0px grey;
-    padding: 0 0 0 16px;
+
+        img{
+            width: 92%;
+            margin: 0 0 0 21px;
+        }
 }
 .phones__text {
     font-family: Inter;
     font-size: 15px;
     line-height: 19.2px;
     text-align: center;
-    margin: 47px 0 0 0;
+    margin: 40px 0 0 0;
 }
 .phones__header {
     font-family: ReadexPro;
     font-size: 32px;
     line-height: 38.4px;
     text-align: center;
+    padding: 0 10px;
 }
 .rightcollum__tablet {
     flex: 0 1 50%;
@@ -377,7 +304,7 @@ margin: 30px 0 30px 0;
     box-shadow: 1px 1px 12px 0px grey;
     padding: 0 17px 0 0;
         img{
-            width: 107.2%;
+            width: 105.8%;
         }
 }
 .tablet__text {
@@ -395,17 +322,6 @@ margin: 30px 0 30px 0;
     margin: 0 0 41px 0;
 }
 
-/////////////////////////////////////////////////////categories adaptive///////////////////////////
-@media(max-width: 1275px){
-
-}
-
-
-@media(max-width: 1072px){
-
-}
-////////////////////////////////////////////////////categories adaptive/////////////////////////////
-
 
 
 //////////////////////////////////////////////////section categories////////////////////
@@ -417,7 +333,7 @@ margin: 30px 0 30px 0;
 
 .prices {
     display: flex;
-    margin: 79px 0 ;
+    margin: 79px 10px 0 10px;
 }
 .prices__wrapper {
 }
@@ -437,28 +353,32 @@ margin: 30px 0 30px 0;
 }
 .prices__products {
     display: flex;
-    margin: 56px 0 0 0;
+    margin: 56px 0px;
     padding: 3px 0 ;
     align-items: center;
+    // gap: 22px;
 
 }
 .products__macpro {
     display: flex;
     flex: 0 1 25%;
     flex-direction: column;
-    align-items: center;
 
         img{
-            width: 75%;
-        }
+            width: 100%;
+        } 
+}
 
-  
+.macpro__img{
+    margin: 0 auto;
+    // padding: 0 0 3px 3px;
 }
 .macpro__header {
     font-family: ReadexPro;
     font-size: 22px;
     line-height: 27.5px;
-    padding: 0 47% 0 0;
+    text-align: left;
+    margin: 37px 0 9px 0;
 }
 .macpro__description {
     font-family: Inter;
@@ -468,69 +388,315 @@ margin: 30px 0 30px 0;
 .macpro__price {
     margin: 25px 0 0 0;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 18px;
     line-height: 21.6px;
     text-align: left;
 
 }
 .products__watch {
+    display: flex;
     flex: 0 1 25%;
+    flex-direction: column;
+
+        img{
+            width: 100%;
+        } 
+}
+.watch__img{
+    margin: 0 auto;
+    // padding: 0 0 55px 6px;
+}
+.watches__header{
+    font-family: ReadexPro;
+    font-size: 22px;
+    line-height: 27.5px;
+    text-align: left;
+    margin: 37px 0 9px 0;
 }
 .watch__description {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 16.8px;
 }
 .watch__price {
+    margin: 25px 0 0 0;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: left;
+
 }
 .products__macair {
+    display: flex;
     flex: 0 1 25%;
+    flex-direction: column;
+
+        img{
+            width: 100%;
+            height: auto;
+        } 
+}
+.maciar__img{
+    margin: 0 auto;
 }
 .macair__header {
+    font-family: ReadexPro;
+    font-size: 22px;
+    line-height: 27.5px;
+    text-align: left;
+    margin: 37px 0 9px 0;
 }
 .macair__description {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 16.8px;
 }
 .macair__price {
+    margin: 25px 0 0 0;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: left;
+
 }
 .products__ipad {
+    display: flex;
     flex: 0 1 25%;
+    flex-direction: column;
+
+        img{
+            width: 100%;
+            height: auto;
+        } 
+}
+.ipad__img{
+    margin: 0 auto;
 }
 .ipad__header {
+    font-family: ReadexPro;
+    font-size: 22px;
+    line-height: 27.5px;
+    text-align: left;
+    margin: 37px 0 9px 0;
 }
 .ipad__description {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 16.8px;
 }
 .ipad__price {
+    margin: 25px 0 0 0;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: left;
+
 }
+///////////////////////////////////////////////////adaptive prices////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////section prices////////////////////////////
+
+
+////////////////////////////////////////////////////sectiom advertising////////////////////////////
 .advertising {
+    margin: 17px 17px;
 }
 .advertising__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .advertising__header {
+    font-family: ReadexPro;
+    font-size: 42px;
+    text-align: center;
+    line-height: 52.2px;
+    flex: 0 1 50%;
 }
 .advertising__text {
+    flex: 0 1 50%;
+    font-family: ReadexPro;
+    font-size: 13px;
+    text-align: center;
+    line-height: 16.8px;
 }
+
 .advertising__cards {
+    margin: 56px 0;
+    display: flex;
+    width: 100%;
+    gap: 24px;
+
 }
 .cards__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 33.33%;
+    background: #f8f9fa;
+    border-radius: 20px;
+  
+
+
 }
 .cards__header {
+    margin: 41px 0 0 0 ;
+    font-size: 13px;
+    font-family: ReadexPro;
+    line-height: 16.8px;
+    text-align: center;
+
 }
 .cards__text {
+
+    font-size: 28px;
+    font-family: ReadexPro;
+    line-height: 35px;
+    text-align: center;
 }
 .cards__btn {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 25px 95px;
+    max-width: 170px;
+    max-height: 50px;
+    font-size: 18px;
+    font-family: Inter;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 80px;
+    margin: 30px 0;
+        a{
+            text-decoration: none;
+        }
+    
 }
+
+
+////////////////////////////////////////////////////sectiom advertising////////////////////////////
+
+////////////////////////////////////////////////////ideas section/////////////////////
+
 .ideas {
+    text-align: center;
+    margin: 19px 7px 0 20px;
 }
 .ideas__wrapper {
 }
 .ideas__header {
+    margin: 0 0 56px 0;
 }
 .ideas__headerHeader {
+    font-family: ReadexPro;
+    font-size: 42px;
+    line-height: 52.5px;
 }
 .ideas__textheader {
+    margin: 7px 0 0 0 ;
+    font-family: ReadexPro;
+    font-size: 13px;
+    line-height: 16.8px;
 }
 .ideas__content {
+    display: flex;
 }
 .ideas__img {
+    flex: 0 1 50%;
+   
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 .ideas__textcontent {
+    font-size: 24px;
+    font-family: Inter;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 0 0 35px;
+   
 }
 .ideas__contentlist {
+   
+        li{
+            margin: 14px 0 28px 0;
+        }
+}
+
+////////////////////////////////////////////////////ideas section/////////////////////
+
+
+footer {
+    display: flex;
+    background: #f8f9fa;
+    flex-shrink: 0;
+    width: 100vw; 
+    margin: 19px 0 0 0;
+}
+.footer__logo {
+    flex: 0 1 30%;
+    margin: 52px 0 0 73px;
+        img{
+            width: 45%;
+        }
+}
+.logo__text {
+    @include stylesForListText();
+    margin: 18px 0 0 0;
+    width: 70%;
+}
+.footer__container {
+    display: flex;
+    flex: 0 1 65%;
+    margin: 44px 50px 70px 6px;
+    gap: 10px;
+}
+.footer__allProducts {
+    flex: 0 1 25%;
+}
+.allProducts__header {
+    @include stylesForListHeader();
+}
+.allProducts__list {
+    @include stylesForListText();
+}
+.footer__company {
+    flex: 0 1 25%;
+}
+.company__header {
+    @include stylesForListHeader();
+}
+.company__list {
+    @include stylesForListText();
+}
+.footer__support {
+    flex: 0 1 25%;
+}
+.support__header {
+    @include stylesForListHeader();
+}
+.support__list {
+    @include stylesForListText();
+}
+.footer__followUs {
+    flex: 0 1 25%;
+}
+.followUs__header {
+    @include stylesForListHeader();
+}
+.followUs__list {
+    @include stylesForListText();
 }

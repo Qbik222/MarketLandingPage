@@ -1,0 +1,17 @@
+@mixin stylesForListHeader {
+    font-size: 22px;
+    line-height: 27.5px;
+    text-align: left;
+    font-family: ReadexPro;
+    margin: 0 0 0 0 ;
+ 
+}
+
+@mixin stylesForListText{
+    font-family: Inter;
+    font-size: 17px;
+    text-align: left;
+        li{
+            margin: 20px 0;
+        }
+}
